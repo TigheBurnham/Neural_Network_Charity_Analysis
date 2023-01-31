@@ -12,7 +12,9 @@ Based on our knowledge of machine learning and neural networks, in this project 
 
 ### Data Preprocessing
 
-- In the preprocessing deliverable the “name” and “ein” columns were removed because they were deemed as non-beneficial for the model. It was also discovered that ask amount, classification, and application type had enough unique variables to be catergorized and binned. 
+- In the preprocessing deliverable the “name” and “ein” columns were removed because they were deemed as non-beneficial for the model. It was also discovered that ask amount, classification, and application type had enough unique variables to be catergorized and binned. This is shown in the image below
+ 
+<img width="188" alt="Screenshot 2023-01-31 131916" src="https://user-images.githubusercontent.com/112028534/215891816-8d0a5cc8-c405-4610-aa9d-57e9a38294dd.png">
 
 - When shooting to optimize the data, the status column was sorted and filtered by active, and then removed. This was done so the model was only taking into account active charities. 
 
@@ -22,19 +24,27 @@ Based on our knowledge of machine learning and neural networks, in this project 
 
 ### What variable(s) are considered to be the features for your model?
 
-- The column “is_successful” was the primary feature for this model.
+- The column “is_successful” was the primary feature for this model. As seen in the image below
+
+<img width="389" alt="target and features" src="https://user-images.githubusercontent.com/112028534/215891651-a5e3b1ec-39aa-427d-ad2d-379b8c2d68e6.png">
 
 ### What variable(s) are neither targets nor features, and should be removed from the input data?
 
-- The “ein” number and the “name” of the charity were removed from the input data because they are features that would not increase the accuracy of the model. 
+- The “ein” number and the “name” of the charity were removed from the input data because they are features that would not increase the accuracy of the model.
+
+<img width="407" alt="dropped columns" src="https://user-images.githubusercontent.com/112028534/215891941-eb611e61-4fb9-47c4-b421-5bd7b00ab991.png">
 
 ### After Compiling, Training, and Evaluating the Model, how many neurons, layers, and activation functions did you select for your neural network model, and why?
 
 - Without optimizing the model, the model had 100 neurons in the first hidden layer and 50 neurons in the second. The activation functions that were selected were relu for the hidden layers and sigmoid for the outer layer. Relu was chosen initially in the hidden layers because it is simpler computationally; whereas, sigmoid requires an exponent therefore it is computationally more demanding.
 
+<img width="698" alt="Layers and activation functions" src="https://user-images.githubusercontent.com/112028534/215892192-3e9d3001-4f82-4a34-af93-e912a076a3ba.png">
+
 ### Were you able to achieve the target model performance?
 
 - Even after trying to optimize the model, we were not able to achieve an accuracy score greater than 75%.
+
+<img width="459" alt="accuracy" src="https://user-images.githubusercontent.com/112028534/215892049-8739b1ac-4af7-42c7-8121-eeb7ec10b81c.png">
 
 ### What steps did you take to try and increase model performance?
 
