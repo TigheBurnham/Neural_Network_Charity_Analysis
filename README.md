@@ -14,7 +14,7 @@ Based on our knowledge of machine learning and neural networks, in this project 
 
 - In the preprocessing deliverable the “name” and “ein” columns were removed because they were deemed as non-beneficial for the model. It was also discovered that ask amount, classification, and application type had enough unique variables to be catergorized and binned. 
 
--When shooting to optimize the data, the status column was sorted and filtered by active, and then removed. This was done so the model was only taking into account active charities. 
+- When shooting to optimize the data, the status column was sorted and filtered by active, and then removed. This was done so the model was only taking into account active charities. 
 
 ### What variable(s) are considered the target(s) for your model?
 
@@ -26,7 +26,7 @@ Based on our knowledge of machine learning and neural networks, in this project 
 
 ### What variable(s) are neither targets nor features, and should be removed from the input data?
 
--The “ein” number and the “name” of the charity were removed from the input data because they are features that would not increase the accuracy of the model. 
+- The “ein” number and the “name” of the charity were removed from the input data because they are features that would not increase the accuracy of the model. 
 
 ### After Compiling, Training, and Evaluating the Model, how many neurons, layers, and activation functions did you select for your neural network model, and why?
 
